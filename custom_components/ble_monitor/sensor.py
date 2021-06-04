@@ -1219,6 +1219,8 @@ class ToothbrushModeSensor(MeasuringSensor):
         self._state = data[self._measurement]
         self._device_state_attributes["last packet id"] = data["packet"]
         self._device_state_attributes["firmware"] = data["firmware"]
+        self._device_state_attributes["byte 1"] = data["byte 1"]
+        self._device_state_attributes["byte 2"] = data["byte 2"]
         if batt_attr is not None:
             self._device_state_attributes[ATTR_BATTERY_LEVEL] = batt_attr
         self.pending_update = True
