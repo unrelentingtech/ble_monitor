@@ -68,7 +68,7 @@ def obj0300(xobj):
 
 
 def obj1000(xobj):
-    return {"toothbrush mode": xobj[1]}
+    return {"toothbrush mode": xobj[1], "byte 1": xobj[0], "byte 2": xobj[1]}
 
 
 def obj0f00(xobj):
