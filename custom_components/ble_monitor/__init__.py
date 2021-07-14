@@ -1,5 +1,5 @@
 """Passive BLE monitor integration."""
-import aioblescan as aiobs
+from . import aioblescan_ext as aiobs
 import asyncio
 import copy
 import janus
